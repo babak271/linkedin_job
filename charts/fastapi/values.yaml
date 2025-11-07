@@ -5,7 +5,8 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: ghcr-creds
 nameOverride: ""
 fullnameOverride: ""
 
@@ -32,7 +33,7 @@ ingress:
   className: "traefik"
   annotations: {}
   hosts:
-    - host: example.com
+    - host: entarbeit.online
       paths:
         - path: /
           pathType: Prefix
