@@ -1,0 +1,9 @@
+FastAPI endpoint should be available shortly after the rollout finishes.
+
+If Ingress is enabled, check the address with:
+
+  kubectl get ingress {{ include "fastapi.fullname" . }} -n {{ .Release.Namespace }}
+
+For NodePort/LoadBalancer services, inspect the service status instead:
+
+  kubectl get svc {{ include "fastapi.fullname" . }} -n {{ .Release.Namespace }}

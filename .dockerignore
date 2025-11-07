@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.swp
+.venv/
+.env
+.git/
+.gitignore
+.idea/
+uv.lock
+*.log
