@@ -1,0 +1,20 @@
+[project]
+name = "linked_job"
+version = "0.1.0"
+description = "Linked job analyzer"
+readme = "README.md"
+authors = [
+    { name = "Babak Ashrafi", email = "seyedbabak.ashrafi@metro-markets.de" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.121.0",
+    "uvicorn[standard]>=0.38.0",
+]
+
+[project.scripts]
+linkedin_job = "linked_job:main"
+
+[build-system]
+requires = ["uv_build>=0.8.4,<0.9.0"]
+build-backend = "uv_build"
