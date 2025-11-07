@@ -56,6 +56,7 @@ jobs:
             exit 1
           fi
           echo "$KUBECONFIG_B64" | base64 -d > kubeconfig
+          chmod 600 kubeconfig
 
       - name: Deploy with Helm
         env:
