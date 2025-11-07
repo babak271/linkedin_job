@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.actor }}/${{ github.repository }}
+  IMAGE_NAME: ghcr.io/${{ github.repository }}
   CHART_PATH: charts/fastapi
   RELEASE_NAME: fastapi
   KUBE_NAMESPACE: fastapi
